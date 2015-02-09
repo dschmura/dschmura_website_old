@@ -29,6 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'haml-rails'
 gem 'bourbon'
+gem 'neat'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
