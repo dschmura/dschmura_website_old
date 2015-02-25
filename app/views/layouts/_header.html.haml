@@ -1,0 +1,36 @@
+- if user_signed_in?
+  = current_user.email
+  = link_to "Log Out", destroy_user_session_path, method: :delete
+-else
+  = link_to "Sign In", new_user_session_path
+%ul
+  %li
+    =link_to "Home", root_path
+  %li
+    =link_to "Portfolio", "#"
+  %li
+    =link_to "Blog", "#"
+  %li
+    =link_to "Contact", "#"
+
+%header.centered-navigation{:role => "banner"}
+  .centered-navigation-wrapper
+    %a.mobile-logo{:href => "javascript:void(0)"}
+      %img{:alt => "Logo image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png"}/
+    %a#js-centered-navigation-mobile-menu.centered-navigation-mobile-menu{:href => "javascript:void(0)"} MENU
+    %nav{:role => "navigation"}
+      %ul#js-centered-navigation-menu.centered-navigation-menu.show
+        %li.nav-link
+          %a{:href => "javascript:void(0)"} Products
+        %li.nav-link
+          %a{:href => "javascript:void(0)"} About Us
+        %li.nav-link
+          %a{:href => "javascript:void(0)"} Contact
+        %li.nav-link.logo
+          %a.logo{:href => "javascript:void(0)"}
+            %img{:alt => "Logo image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png"}/
+        %li.nav-link
+          %a{:href => "javascript:void(0)"} Testimonials
+
+        %li.nav-link
+          %a{:href => "javascript:void(0)"} Sign up
