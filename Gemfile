@@ -32,6 +32,8 @@ gem 'font-awesome-rails'
 gem 'bourbon'
 gem 'neat'
 
+gem "storytime"
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
