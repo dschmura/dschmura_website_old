@@ -218,7 +218,7 @@ GEM
     pg (0.18.1)
     pundit (0.3.0)
       activesupport (>= 3.0.0)
-    rack (1.6.0)
+    rack (1.6.13)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.0)
